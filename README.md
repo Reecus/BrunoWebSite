@@ -1,2 +1,0 @@
-# BrunoWebSite
-My personal website
