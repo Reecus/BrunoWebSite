@@ -2,6 +2,7 @@ body{
   font-family: Tahoma,sans-serif;
   margin: 0;
   padding: :0;
+  padding-bottom: 50px;
 }
 .header{
   display: block;;
@@ -85,3 +86,35 @@ body{
    font-style: italic;
    padding-bottom: 30px;
  }
+
+ .seccion > p{
+   font-weight: bold;
+ }
+
+#ContactoSection{
+  text-align: center;;
+}
+
+#ExperienciaSection ~ span{
+  display: block;
+  padding: 20px;
+}
+
+a[href^="http://"]{
+  display: block;
+  padding: 3px;
+  background-color: #dc6464;
+  width: auto;
+  border-radius: 4px;
+  margin: auto;
+  max-width: 200px;
+}
+a[href^="https://"]{
+  display: block;
+  padding: 3px;
+  background-color: #69af69;
+  width: auto;
+  border-radius: 4px;
+  margin: auto;
+  max-width: 200px;
+}
