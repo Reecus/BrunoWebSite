@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Challenge 3</title>
+    <style media="screen">
+      div.warning > ul{
+        background-color: red;
+      }
+      p ~ *{
+        border:1px solid blue;
+      }
+
+      p + ul i{
+        background-color: green;
+      }
+
+      nav a[href^="https://"]:after{
+        content: 'Secure link';
+        background-color: green;
+      }
+
+      .container img[src^="https://"]{
+        border: 1px solid green;
+        padding: 5px;
+      }
+
+      li input[type="checkbox"]:checked{
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <div class="warning" >
+      <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+      </ul><br>
+      <div>
+        <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+        </ul>
+      </div>
+    </div>
+    <br />
+    <p>first &lt;p&gt; tag</p>
+    <br />
+    <p>&lt;p&gt; tag</p>
+    <ul>
+      <i>&lt;i&gt; tag inside &lt;ul&gt; tag right after p tag</i><br />
+      <i>&lt;i&gt; tag inside &lt;ul&gt; tag right after p tag</i><br />
+    </ul><br />
+    <ul>
+      <i>&lt;i&gt; tag inside &lt;ul&gt; tag</i><br />
+      <i>&lt;i&gt; tag inside &lt;ul&gt; tag</i><br />
+    </ul><br />
+    <nav>
+      <a href="https://google.com">Secure google link inside &lt;nav&gt; tag </a><br />
+      <a href="http://google.com">Insecure google link inside &lt;nav&gt; tag </a><br />
+    </nav><br />
+    <a href="https://google.com">Secure google link outside &lt;nav&gt; tag </a><br />
+    <a href="http://google.com">Insecure google link outside &lt;nav&gt; tag </a><br />
+    <br />
+    <div class="container">
+      <img src="Content\Images\shark.gif" alt="No secure conection">
+      <img src="https://www.tutorialesmesi.com.ar/wp-content/uploads/2016/04/https1.png" alt="No secure conection">
+    </div>
+    <ul>
+      <li> <input type="checkbox" name="prueba" >checkbox </li>
+    </ul>
+    <footer></footer>
+  </body>
+</html>
